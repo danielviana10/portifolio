@@ -1,4 +1,6 @@
-Portifólio profissional construído em Next.JS.
+Portifólio profissional.
+
+Tecnologias utilizadas: Next.JS, TypeScript, TailWind, Figma e Adobe Photoshop.
 
 O intuito desse projeto, além de demonstrar meu conhecimento em front-end com Next.JS, é compartilhar informações profissionais e pessoais sobre mim, apontando experiências profissionais, habilidades, hobbies e opiniões.
 
