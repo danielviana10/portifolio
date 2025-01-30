@@ -1,6 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import { Navbar } from "@/components/NavBar/Navbar";
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt">
-      <body 
+    <html lang='en'>
+      <body suppressHydrationWarning 
         className={`${montserrat.className} antialiased`}
       >
         <Navbar />
