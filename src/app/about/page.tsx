@@ -117,21 +117,21 @@ const AboutSection = () => {
             ))}
           </div>
           
-          <div className="w-1/2 font-semibold text-[1.11rem] relative">
+          <div className="w-1/2 font-semibold text-[1rem] relative">
             <p>
-              Desenvolvedor Full Stack, apaixonado por <span className="text-greenCustom">criar</span> interfaces e designs que <span className="text-greenCustom">simplificam</span> a vida dos usuários, com foco em <span className="text-greenCustom">inovação</span> e <span className="text-greenCustom">escalabilidade</span>. Minha missão é <span className="text-greenCustom">conectar</span> a funcionalidade impecável do back-end à <span className="text-greenCustom">usabilidade</span> intuitiva do front-end, entregando soluções completas e eficientes.
+              Desenvolvedor Full Stack, apaixonado por <span className="text-greenCustom">criar</span> interfaces intuitivas e designs que tornam a <span className="text-greenCustom">experiência</span> do usuário mais simples e eficiente. Meu foco está na <span className="text-greenCustom">inovação</span> e escalabilidade, <span className="text-greenCustom">conectando</span> um back-end sólido a um front-end fluido para <span className="text-greenCustom">entregar soluções</span> completas e de alto <span className="text-greenCustom">desempenho</span>.
             </p>
             <br />
             <p>
-              Sou formado em <span className="text-greenCustom">Desenvolvimento de Sistemas</span> pela UNICV, estou graduando em <span className="text-greenCustom">Ciência da Computação</span> pela UNIP e concluí o bootcamp <span className="text-greenCustom">Full Stack</span> da Kenzie Academy. Com experiência em <span className="text-greenCustom">desenvolvimento web</span>, mobile, <span className="text-greenCustom">UX/UI design</span> e sistemas integrados, ofereço <span className="text-greenCustom">soluções robustas</span>, escaláveis e com código limpo.
+              Sou formado em <span className="text-greenCustom">Desenvolvimento de Sistemas</span> pela UNICV, estou cursando <span className="text-greenCustom">Ciência da Computação</span> na UNIP e concluí o bootcamp <span className="text-greenCustom">Full Stack</span> da Kenzie Academy. Com experiência em desenvolvimento web, mobile, UX/UI design e sistemas integrados, <span className="text-greenCustom">desenvolvo</span> aplicações robustas, escaláveis e com código limpo e <span className="text-greenCustom">bem estruturado</span>.
             </p>
             <br />
             <p>
-              Acredito que a tecnologia deve ser <span className="text-greenCustom">acessível</span> a todos e gosto de <span className="text-greenCustom">transformar</span> conceitos complexos em ideias simples e práticas. Minha abordagem <span className="text-greenCustom">colaborativa</span>, aliada ao foco em <span className="text-greenCustom">resultados</span>, me motiva a aprender continuamente, amuderecer e enfrentar <span className="text-greenCustom">novos desafios</span>.
+              Acredito que a tecnologia deve ser <span className="text-greenCustom">acessível</span> a todos e gosto de transformar conceitos complexos em <span className="text-greenCustom">soluções práticas</span>.
             </p>
             <br />
             <p>
-              No meu tempo livre, quando não estou <span className="text-greenCustom">estudando</span> ou trabalhando, gosto de estar com minha <span className="text-greenCustom">família</span> ou amigos, conversar, patinar, viajar, <span className="text-greenCustom">ler</span> um bom livro ou jogar <span className="text-greenCustom cursor-pointer" onClick={handleClick}>League of Legends</span> de vez em quando.
+              No meu tempo livre, gosto de estar com minha <span className="text-greenCustom">família</span> e amigos, viajar, patinar, <span className="text-greenCustom">ler</span> um bom livro ou, de vez em quando, <span className="text-greenCustom cursor-pointer" onClick={handleClick}>jogar League of Legends</span> .
             </p>
             <Image
               className="absolute right-5 bottom-0"
