@@ -7,6 +7,7 @@ import { useState } from "react";
 import SkillsSection from "./skills/page";
 import ExperiencesSection from "./experiences/page";
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ProjectsSection from "./projects/page";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -59,6 +60,8 @@ export default function Home() {
       <SkillsSection />
 
       <ExperiencesSection />
+
+      <ProjectsSection />
     </main>
   );
 }

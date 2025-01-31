@@ -53,12 +53,12 @@ export const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link href="#projetos" className={styles.hoverEffect}>
+          <Link href="#projects" className={styles.hoverEffect}>
             projetos
           </Link>
         </li>
         <li>
-          <Link href="#contato" className={styles.hoverEffect}>
+          <Link href="#contacts" className={styles.hoverEffect}>
             contatos
           </Link>
         </li>
