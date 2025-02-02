@@ -6,6 +6,7 @@
   --background: #1D1F24;
   --foreground: #FFFFFF;
   --greenCustom: #07E78F;
+  --blackCustom: #101012
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,3 +26,68 @@ body {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
 }
+
+.carousel {
+  margin: 0;
+  padding: 0;
+  width: 98.5vw;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel .group-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  width: 275px;
+  height: 72px;
+  color: white;
+  background: var(--blackCustom);
+  border-radius: 24px;
+  font-size: 24px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 35px;
+}
+
+.card img {
+  object-fit: contain;
+}
+
+.group {
+  display: flex;
+  gap: 40px;
+  will-change: transform;
+  animation: scrolling 100s linear infinite;
+}
+
+.group:nth-child(1) {
+  animation-duration: 140s;
+}
+.group:nth-child(2) {
+  animation-duration: 145s;
+}
+.group:nth-child(3) {
+  animation-duration: 150s;
+}
+.group:nth-child(4) {
+  animation-duration: 155s;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+

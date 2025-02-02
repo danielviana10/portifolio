@@ -4,8 +4,10 @@ import { Button } from "@/components/Button/Button";
 import Image from "next/image";
 import { FaDownload } from "react-icons/fa";
 import { useState } from "react";
-import AboutSection from "./about/page";
 import SkillsSection from "./skills/page";
+import ExperiencesSection from "./experiences/page";
+import AboutSection from "@/components/AboutSection/AboutSection";
+import ProjectsSection from "./projects/page";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -56,6 +58,10 @@ export default function Home() {
       <AboutSection />
 
       <SkillsSection />
+
+      <ExperiencesSection />
+
+      <ProjectsSection />
     </main>
   );
 }
