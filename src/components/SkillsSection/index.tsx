@@ -1,9 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import SectionTitle from '../SectionTitle';
 import { skills } from "./skills";
-
-
 
 const SkillsSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +16,9 @@ const SkillsSection: React.FC = () => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting)
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
       },
       {
         rootMargin: "0px",
@@ -46,38 +48,32 @@ const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section
+    <motion.section
       id="skills"
       ref={skillsRef}
-      className={`w-full pt-[5rem] pb-[3rem] px-6 sm:px-8 lg:px-8 transition-opacity duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      className="w-full min-h-screen py-12 my-12 px-8"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+      transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto relative">
-        <h2
-          className="absolute inset-0 text-center text-6xl font-semibold text-white opacity-10"
-          style={{ top: "4px" }}
-          aria-hidden="true"
-        >
-          HABILIDADES
-        </h2>
-        <h2 className="text-center text-4xl font-semibold text-greenCustom mb-10 relative z-10">
-          Habilidades
-        </h2>
+        <SectionTitle title="HABILIDADES" subtitle="Habilidades"/>
 
         {skills.map((line, lineIndex) => (
           <div
             className="carousel"
             key={lineIndex}
             onMouseEnter={() => handleMouseEnter(lineIndex)}
-            onMouseLeave={() => handleMouseLeave(lineIndex)} 
+            onMouseLeave={() => handleMouseLeave(lineIndex)}
           >
             <div
               className={`group ${isVisible ? "scrolling" : ""}`}
               style={{
-                animationName: isVisible ? "scrolling" : "none", 
-                animationDuration: `${140 + lineIndex * 5}s`, 
-                animationTimingFunction: "linear", 
-                animationIterationCount: "infinite", 
-                animationPlayState: isHovered[lineIndex] ? "paused" : "running", 
+                animationName: isVisible ? "scrolling" : "none",
+                animationDuration: `${140 + lineIndex * 5}s`,
+                animationTimingFunction: "linear",
+                animationIterationCount: "infinite",
+                animationPlayState: isHovered[lineIndex] ? "paused" : "running",
               }}
             >
               {line.map((item, index) => (
@@ -96,7 +92,7 @@ const SkillsSection: React.FC = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
