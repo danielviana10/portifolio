@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 :root {
+  --greyCostum: #30333A;
   --background: #1D1F24;
   --foreground: #FFFFFF;
   --greenCustom: #07E78F;
-  --blackCustom: #101012
+  --blackCustom: #101012;
+  --blackCustmo2: #17181B;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,16 @@ body {
   background: var(--background);
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.05em;
+}
+
+section {
+  scroll-margin-top: 50%; 
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .carousel {

@@ -10,9 +10,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'navbar-bg': '#30333A',
-        'greenCustom': '#07E78F',
-        'greyCostum': 'var(--background)'
+        'navbar-bg': 'var(--greyCostum)',
+        'greenCustom': 'var(--greenCustom)',
+        'greyCostum': 'var(--background)',
+        'iconCustom': 'var(--blackCustmo2)',
       },
     },
   },

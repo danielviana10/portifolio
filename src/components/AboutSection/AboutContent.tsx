@@ -1,27 +1,31 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 import SvgRenderer from './SvgRenderer';
 import ClickableText from './ClickableText';
+import SectionTitle from '../SectionTitle';
 
 interface AboutContentProps {
   svgList: { id: number; top: number; left: number }[];
   divRef: React.RefObject<HTMLDivElement | null>;
   handleClick: () => void;
+  isVisible: boolean;
 }
 
 const AboutContent: React.FC<AboutContentProps> = ({
   svgList,
   divRef,
   handleClick,
+  isVisible,
 }) => (
-  <div className="max-w-6xl mx-auto relative">
-    <h2 className="absolute inset-0 text-center text-6xl font-semibold text-white opacity-10" style={{ top: '4px' }}>
-      SOBRE MIM
-    </h2>
-
-    <h2 className="text-center text-4xl font-semibold text-greenCustom mb-6 relative z-10">
-      Sobre mim
-    </h2>
+  <motion.div
+    className="max-w-6xl mx-auto relative"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }} 
+    transition={{ duration: 1, ease: 'easeOut' }}
+  >
+    <SectionTitle title="SOBRE MIM" subtitle="Sobre Mim" />
 
     <div className="flex items-center justify-between mt-8">
       <div ref={divRef as React.RefObject<HTMLDivElement>} className="w-1/2 relative">
@@ -85,7 +89,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
         />
       </div>
     </div>
-  </div>
+  </motion.div>
 );
 
 export default AboutContent;
