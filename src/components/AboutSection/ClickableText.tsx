@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface ClickableTextProps {
-  onClick: () => void;
+  onClick?: () => void;
   children: React.ReactNode;
 }
 

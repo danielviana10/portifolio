@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -103,3 +106,22 @@ html, body {
   }
 }
 
+@keyframes circle-border {
+  0% {
+    transform: rotate(0deg);
+    border: 2px solid transparent;
+    border-top-color: var(--greenCustom);
+  }
+  100% {
+    transform: rotate(860deg);
+    border: 2px solid var(--greenCustom);
+  }
+}
+
+.hover\:before\:animate-circle-border:hover::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  animation: circle-border 1s linear forwards;
+}

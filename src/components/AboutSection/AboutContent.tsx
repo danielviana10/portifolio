@@ -54,30 +54,30 @@ const AboutContent: React.FC<AboutContentProps> = ({
       <div className="w-1/2 font-semibold text-[1rem] relative">
         <p>
           Desenvolvedor Full Stack, apaixonado por{' '}
-          <ClickableText onClick={handleClick}>criar</ClickableText> interfaces intuitivas e designs que tornam a{' '}
-          <ClickableText onClick={handleClick}>experiência</ClickableText> do usuário mais simples e eficiente. Meu foco está na{' '}
-          <ClickableText onClick={handleClick}>inovação</ClickableText> e escalabilidade,{' '}
-          <ClickableText onClick={handleClick}>conectando</ClickableText> um back-end sólido a um front-end fluido para{' '}
-          <ClickableText onClick={handleClick}>entregar soluções</ClickableText> completas e de alto{' '}
-          <ClickableText onClick={handleClick}>desempenho</ClickableText>.
+          <ClickableText>criar</ClickableText> interfaces intuitivas e designs que tornam a{' '}
+          <ClickableText>experiência</ClickableText> do usuário mais simples e eficiente. Meu foco está na{' '}
+          <ClickableText>inovação</ClickableText> e escalabilidade,{' '}
+          <ClickableText>conectando</ClickableText> um back-end sólido a um front-end fluido para{' '}
+          <ClickableText>entregar soluções</ClickableText> completas e de alto{' '}
+          <ClickableText>desempenho</ClickableText>.
         </p>
         <br />
         <p>
-          Sou formado em <ClickableText onClick={handleClick}>Desenvolvimento de Sistemas</ClickableText> pela UNICV, estou cursando{' '}
-          <ClickableText onClick={handleClick}>Ciência da Computação</ClickableText> na UNIP e concluí o bootcamp{' '}
-          <ClickableText onClick={handleClick}>Full Stack</ClickableText> da Kenzie Academy. Com experiência em desenvolvimento web, mobile, UX/UI design e sistemas integrados,{' '}
-          <ClickableText onClick={handleClick}>desenvolvo</ClickableText> aplicações robustas, escaláveis e com código limpo e{' '}
-          <ClickableText onClick={handleClick}>bem estruturado</ClickableText>.
+          Sou formado em <ClickableText>Desenvolvimento de Sistemas</ClickableText> pela UNICV, estou cursando{' '}
+          <ClickableText>Ciência da Computação</ClickableText> na UNIP e concluí o bootcamp{' '}
+          <ClickableText>Full Stack</ClickableText> da Kenzie Academy. Com experiência em desenvolvimento web, mobile, UX/UI design e sistemas integrados,{' '}
+          <ClickableText>desenvolvo</ClickableText> aplicações robustas, escaláveis e com código limpo e{' '}
+          <ClickableText>bem estruturado</ClickableText>.
         </p>
         <br />
         <p>
-          Acredito que a tecnologia deve ser <ClickableText onClick={handleClick}>acessível</ClickableText> a todos e gosto de transformar conceitos complexos em{' '}
-          <ClickableText onClick={handleClick}>soluções práticas</ClickableText>.
+          Acredito que a tecnologia deve ser <ClickableText>acessível</ClickableText> a todos e gosto de transformar conceitos complexos em{' '}
+          <ClickableText>soluções práticas</ClickableText>.
         </p>
         <br />
         <p>
-          No meu tempo livre, gosto de estar com minha <ClickableText onClick={handleClick}>família</ClickableText> e amigos, viajar, patinar,{' '}
-          <ClickableText onClick={handleClick}>ler</ClickableText> um bom livro ou, de vez em quando,{' '}
+          No meu tempo livre, gosto de estar com minha <ClickableText>família</ClickableText> e amigos, viajar, patinar,{' '}
+          <ClickableText>ler</ClickableText> um bom livro ou, de vez em quando,{' '}
           <ClickableText onClick={handleClick}>jogar League of Legends</ClickableText>.
         </p>
         <Image

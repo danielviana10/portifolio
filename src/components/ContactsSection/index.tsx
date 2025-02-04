@@ -4,12 +4,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionTitle from "../SectionTitle";
 
+const message = "?text=Oi,%20Daniel!%20Vi%20seu%20portifólio,%20vamos%20conversar?";
+
 const contacts = [
   {
     name: "Telefone",
     icon: "/icons/whatsapp.svg",
     info: "(11) 97740-8772",
-    link: "https://wa.me/5511977408772"
+    link: `https://wa.me/5511977408772${message}`
   },
   {
     name: "E-mail",
@@ -21,13 +23,13 @@ const contacts = [
     name: "LinkedIn",
     icon: "/icons/linkedin.svg",
     info: "@danielviana",
-    link: "https://www.linkedin.com/in/danielviana"
+    link: "https://www.linkedin.com/in/daniel-viana-943420184/"
   },
   {
     name: "GitHub",
     icon: "/icons/octacat.svg",
     info: "@danielviana",
-    link: "https://github.com/danielviana"
+    link: "https://github.com/danielviana10"
   }
 ];
 
@@ -83,7 +85,10 @@ const ContactsSection: React.FC = () => {
             animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className="w-16 h-16 bg-iconCustom flex items-center justify-center rounded-full shadow-md">
+            <div
+              className="w-16 h-16 bg-iconCustom flex items-center justify-center rounded-full shadow-md relative
+                        hover:before:absolute hover:before:inset-[-2px] hover:before:rounded-full hover:before:animate-circle-border"
+            >
               <Image
                 src={contact.icon}
                 alt={contact.name}
