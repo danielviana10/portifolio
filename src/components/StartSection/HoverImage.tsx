@@ -17,7 +17,7 @@ const HoverImage: React.FC<HoverImageProps> = ({ hoverScale = "scale-110", alt, 
       <Image
         {...props}
         alt={alt}
-        className={`rounded-full object-cover relative top-0 md:top-20 transition-transform duration-300 ${isHovered ? hoverScale : ""}`}
+        className={`rounded-full object-cover relative top-0 md:top-[3rem] lg:top-20 transition-transform duration-300 ${isHovered ? hoverScale : ""}`}
       />
     </div>
   );
