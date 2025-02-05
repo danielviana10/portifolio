@@ -7,12 +7,12 @@ interface AnimatedTitleProps {
 }
 
 const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ name, title }) => {
-  const { t } = useTranslation('startSection');
+  const { t } = useTranslation("startSection");
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <h2 className="text-4xl md:text-5xl font-semibold leading-[1.30] mb-10">
-      {t("animatedTitle.greeting")}
+      {t("greeting")}
       <br />
       <span
         className={`text-greenCustom transition-transform duration-300 ${isHovered ? "scale-110" : ""} inline-block`}

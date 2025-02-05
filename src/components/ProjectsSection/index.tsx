@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../SectionTitle";
 import projects from "./projects";
+import { useTranslation } from "next-i18next";
 
 const ProjectsSection: React.FC = () => {
 
@@ -11,6 +12,7 @@ const ProjectsSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false); 
   const sectionRef = useRef<HTMLElement | null>(null);
+  const { t } = useTranslation("projectsSection");
   const totalSlides = projects.length;
 
   const goToPrevious = () => {
@@ -53,7 +55,7 @@ const ProjectsSection: React.FC = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto relative">
-        <SectionTitle title="PROJETOS" subtitle="Projetos" />
+        <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
         <div className="flex items-center justify-center space-x-4 mt-28">
           <button

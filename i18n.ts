@@ -11,11 +11,13 @@ i18n
     fallbackLng: 'pt', 
     debug: false, 
     interpolation: {
-      escapeValue: false, 
+      escapeValue: false,
     },
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json', 
+      loadPath: '/locales/{{lng}}/{{ns}}.json', 
     },
+    ns: ['startSection', 'aboutSection', 'skillsSection', 'experiencesSection', 'projectsSection', 'contactsSection', 'navbar'], 
+    defaultNS: 'startSection', 
   });
 
 export default i18n;

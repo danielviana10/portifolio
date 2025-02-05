@@ -11,7 +11,7 @@ const StartSection: React.FC = () => {
 
   return (
     <motion.section
-      id="inicio"
+      id="home"
       className="flex flex-col items-center justify-center min-h-screen py-12 px-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -19,22 +19,22 @@ const StartSection: React.FC = () => {
     >
       <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
         <div className="max-w-sm text-start flex flex-col items-start">
-          <AnimatedTitle name="Daniel" title={t("startSection.title")} />
+          <AnimatedTitle name="Daniel" title={t("title")} />
 
           <Button
             href="/daniel-viana-curriculo.pdf"
-            ariaLabel={t("startSection.downloadCV")}
+            ariaLabel={t("downloadCV")}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>{t("startSection.cvButton")}</span>
+            <span>{t("cvButton")}</span>
             <FaDownload className="text-white" />
           </Button>
         </div>
 
         <HoverImage
           src="/me-presentation.svg"
-          alt={t("startSection.imageAlt")}
+          alt={t("imageAlt")}
           width={350}
           height={350}
           priority

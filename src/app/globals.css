@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 :root {
-  --greyCostum: #30333A;
+  --greyCustom: #30333A;
   --background: #1D1F24;
   --foreground: #FFFFFF;
   --greenCustom: #07E78F;

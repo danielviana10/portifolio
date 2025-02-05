@@ -4,8 +4,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import SectionTitle from '../SectionTitle';
 import { skills } from "./skills";
+import { useTranslation } from "next-i18next";
 
 const SkillsSection: React.FC = () => {
+  const { t } = useTranslation("skillsSection");
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState<boolean[]>(skills.map(() => false));
   const skillsRef = useRef<HTMLElement | null>(null);
@@ -57,7 +59,7 @@ const SkillsSection: React.FC = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto relative">
-        <SectionTitle title="HABILIDADES" subtitle="Habilidades"/>
+      <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} paddingBottom={true}/>
 
         {skills.map((line, lineIndex) => (
           <div

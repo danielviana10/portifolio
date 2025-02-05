@@ -2,40 +2,42 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslation } from "next-i18next";
 import SectionTitle from "../SectionTitle";
 
-const message = "?text=Oi,%20Daniel!%20Vi%20seu%20portifólio,%20vamos%20conversar?";
-
-const contacts = [
-  {
-    name: "Telefone",
-    icon: "/icons/whatsapp.svg",
-    info: "(11) 97740-8772",
-    link: `https://wa.me/5511977408772${message}`
-  },
-  {
-    name: "E-mail",
-    icon: "/icons/mail.svg",
-    info: "danielviana43@gmail.com",
-    link: "mailto:danielviana43@gmail.com"
-  },
-  {
-    name: "LinkedIn",
-    icon: "/icons/linkedin.svg",
-    info: "@danielviana",
-    link: "https://www.linkedin.com/in/daniel-viana-943420184/"
-  },
-  {
-    name: "GitHub",
-    icon: "/icons/octacat.svg",
-    info: "@danielviana",
-    link: "https://github.com/danielviana10"
-  }
-];
-
 const ContactsSection: React.FC = () => {
+  const { t } = useTranslation("contactsSection");
   const [isVisible, setIsVisible] = useState(false);
   const contactsRef = useRef<HTMLElement | null>(null);
+
+  const message = t("message");
+
+  const contacts = [
+    {
+      name: "whatsapp",
+      icon: "/icons/whatsapp.svg",
+      info: "(11) 97740-8772",
+      link: `https://wa.me/5511977408772${message}`
+    },
+    {
+      name: "email",
+      icon: "/icons/mail.svg",
+      info: "danielviana43@gmail.com",
+      link: "mailto:danielviana43@gmail.com"
+    },
+    {
+      name: "linkedin",
+      icon: "/icons/linkedin.svg",
+      info: "@danielviana",
+      link: "https://www.linkedin.com/in/daniel-viana-943420184/"
+    },
+    {
+      name: "github",
+      icon: "/icons/octacat.svg",
+      info: "@danielviana",
+      link: "https://github.com/danielviana10"
+    }
+  ];
 
   useEffect(() => {
     const contactsElement = contactsRef.current;
@@ -67,13 +69,11 @@ const ContactsSection: React.FC = () => {
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       transition={{ duration: 0.8 }}
     >
-      <SectionTitle title="CONTATOS" subtitle="Contatos" />
+      <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-      <h3 className="text-center text-3xl font-semibold mb-36">
-        Estou a um clique de distância
-      </h3>
+      <h3 className="text-center text-3xl font-semibold mt-20 mb-28">{t("cta")}</h3>
 
-      <div className="flex justify-center gap-12 flex-wrap">
+      <div className="flex justify-center gap-12 flex-wrap pt-20">
         {contacts.map((contact, index) => (
           <motion.a
             key={index}
@@ -91,18 +91,18 @@ const ContactsSection: React.FC = () => {
             >
               <Image
                 src={contact.icon}
-                alt={contact.name}
+                alt={t(contact.name)} 
                 width={40}
                 height={40}
               />
             </div>
-            <p className="text-lg font-semibold text-white mt-2">{contact.name}</p>
+            <p className="text-lg font-semibold text-white mt-2">{t(contact.name)}</p>
             <p className="text-sm font-semibold text-greenCustom">{contact.info}</p>
           </motion.a>
         ))}
       </div>
 
-      <footer className="w-full py-4 text-center bg-blackCustom mt-[7rem]">
+      <footer className="w-full py-4 text-center bg-blackCustom mt-40">
         <p className="text-gray-400 text-sm">
           Copyright © 2025{" "}
           <a
@@ -113,7 +113,8 @@ const ContactsSection: React.FC = () => {
           >
             Daniel Viana
           </a>
-          . Todos os direitos reservados.
+          {". "}
+          {t("copyrightText")}
         </p>
       </footer>
     </motion.section>

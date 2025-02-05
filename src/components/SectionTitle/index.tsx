@@ -3,11 +3,12 @@ import React from 'react';
 interface SectionTitleProps {
   title: string;
   subtitle: string;
+  paddingBottom?: boolean;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => {
+const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle, paddingBottom }) => {
   return (
-    <div className="relative mb-10">
+    <div className={`relative mb-10 ${paddingBottom ? 'pb-5' : ''}`}>
       <h2
         className="absolute inset-0 text-center text-6xl font-semibold text-white opacity-10"
         style={{ top: '4px' }}
