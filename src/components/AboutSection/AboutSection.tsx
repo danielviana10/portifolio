@@ -67,7 +67,7 @@ const AboutSection = () => {
     <section
       id="about"
       ref={aboutRef}
-      className={`w-full py-12 mb-12 px-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+      className={`w-full min-h-screen py-12 mb-12 px-8 transition-opacity duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
     >
       <AboutContent
         svgList={svgList}

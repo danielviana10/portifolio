@@ -24,8 +24,9 @@ const SvgRenderer: React.FC<SvgRendererProps> = ({ svg }) => (
     <Image
       src="/teemo-emoji.svg"
       alt="Teemo emoji"
-      width={100}
-      height={100}
+      width={50}
+      height={50}
+      className="w-16 h-16 md:w-16 md:h-16 lg:w-20 lg:h-20"
     />
   </div>
 );

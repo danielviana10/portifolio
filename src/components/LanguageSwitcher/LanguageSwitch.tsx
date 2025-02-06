@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
@@ -9,9 +9,21 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
+    const handleClickOutside = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -19,7 +31,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="fixed top-20 right-6 bg-navbarBg p-2 rounded-full shadow-lg z-40">
+    <div ref={containerRef} className="fixed top-20 right-6 sm:right-6 md:right-14 lg:right-16 bg-navbarBg p-2 rounded-full shadow-lg z-40">
       <AnimatePresence mode="wait">
         {isOpen ? (
           <motion.div

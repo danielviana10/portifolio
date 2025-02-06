@@ -24,15 +24,15 @@ const AboutContent: React.FC<AboutContentProps> = ({
 
   return (
     <motion.div
-      className="max-w-6xl mx-auto relative"
+      className="max-w-6xl mx-auto relative px-4 sm:px-6 lg:px-8"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       transition={{ duration: 1, ease: "easeOut" }}
     >
       <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-      <div className="flex items-center justify-between mt-8">
-        <div ref={divRef as React.RefObject<HTMLDivElement>} className="w-1/2 relative">
+      <div className="flex flex-col md:flex-col items-center justify-between sm:mt-8 space-y-8 md:mt-12 md:space-y-0 lg:mt-8 lg:flex-row">
+        <div ref={divRef as React.RefObject<HTMLDivElement>} className="w-60 md:w-1/2 lg:w-1/2 relative">
           <Image
             className="absolute top-0 left-0"
             src="/filled-circle.svg"
@@ -42,7 +42,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
             priority
           />
           <Image
-            className="rounded-full object-cover transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md hover:shadow-greenCustom"
+            className="rounded-full object-cover transition-all duration-300 ease-in-out transform hover:scale-110 hover:shadow-md hover:shadow-greenCustom mx-auto md:mx-0"
             src="/daniel-about-me.svg"
             alt="Imagem do Daniel"
             width={330}
@@ -55,7 +55,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
           ))}
         </div>
 
-        <div className="w-1/2 font-semibold text-[1rem] relative">
+        <div className="w-full md:w-[36rem] md:pt-7 lg:w-1/2 font-semibold text-[1rem] relative">
           <p>
             {t("description1")} <ClickableText>{t("create")}</ClickableText> {t("description1b")}{" "}
             <ClickableText>{t("experience")}</ClickableText> {t("description1c")}{" "}

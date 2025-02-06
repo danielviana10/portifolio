@@ -17,32 +17,33 @@ const StartSection: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col items-center justify-center w-full max-w-5xl space-y-10 md:space-y-0 md:space-x-12 lg:flex-row">
-        <div className="text-start md:text-start flex flex-col items-start md:items-start space-y-0 md:space-y-0 lg:space-y-8 lg:w-[22rem]">
-          <AnimatedTitle name="Daniel" title={t("title")} />
+<div className="flex flex-col items-center justify-center w-full max-w-5xl space-y-10 md:space-y-0 md:space-x-12 lg:flex-row">
+  <div className="text-start sm:max-sm:flex md:text-start flex flex-col items-start md:items-start space-y-0 md:space-y-0 lg:space-y-8 lg:w-[22rem] pt-4 sm:pt-0">
+    <AnimatedTitle name="Daniel" title={t("title")} />
 
-          <Button
-            href="/daniel-viana-curriculo.pdf"
-            ariaLabel={t("downloadCV")}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span>{t("cvButton")}</span>
-            <FaDownload className="text-white" />
-          </Button>
-        </div>
+    <Button
+      href="/daniel-viana-curriculo.pdf"
+      ariaLabel={t("downloadCV")}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>{t("cvButton")}</span>
+      <FaDownload className="text-white" />
+    </Button>
+  </div>
 
-        <div className="w-64 sm:w-72 md:w-96 lg:w-96">
-          <HoverImage
-            src="/me-presentation.svg"
-            alt={t("imageAlt")}
-            width={350}
-            height={350}
-            priority
-          />
-        </div>
+  <div className="w-60 md:w-96 lg:w-96">
+    <HoverImage
+      src="/me-presentation.svg"
+      alt={t("imageAlt")}
+      width={350}
+      height={350}
+      priority
+      className="w-full"
+    />
+  </div>
+</div>
 
-      </div>
     </motion.section>
   );
 };
