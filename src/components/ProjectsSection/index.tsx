@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../SectionTitle";
 import projects from "./projects";
+import { useTranslation } from "next-i18next";
 
 const ProjectsSection: React.FC = () => {
 
@@ -11,6 +12,7 @@ const ProjectsSection: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false); 
   const sectionRef = useRef<HTMLElement | null>(null);
+  const { t } = useTranslation("projectsSection");
   const totalSlides = projects.length;
 
   const goToPrevious = () => {
@@ -46,16 +48,16 @@ const ProjectsSection: React.FC = () => {
     <motion.section
       id="projects"
       ref={sectionRef}
-      className="w-full min-h-screen py-12 my-12 px-8 transition-opacity duration-1000"
+      className="w-full min-h-screen pt-12 mb-0 px-8 transition-opacity duration-1000"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       exit={{ opacity: 0, y: 20 }}
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto relative">
-        <SectionTitle title="PROJETOS" subtitle="Projetos" />
+        <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-        <div className="flex items-center justify-center space-x-4 mt-28">
+        <div className="flex items-center justify-center space-x-4 mt-28 md:pt-[10rem] lg:pt-[3rem]">
           <button
             onClick={goToPrevious}
             disabled={currentIndex === 0}

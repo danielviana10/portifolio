@@ -1,0 +1,35 @@
+{
+    "title": "EXPERIENCES",
+    "subtitle": "Experiences",
+    "experiences": [
+      {
+        "title": "Full Stack Developer",
+        "company": "Freelancer",
+        "date": "Currently",
+        "city": "Barueri, SP",
+        "description": "Custom web/mobile application development, website maintenance and design, business portfolio, schedule management, task automation and testing.<br/> <b>Technologies:</b> React, TypeScript, Tailwind, Nest.js, TypeORM, Python, Testify."
+      },
+      {
+        "title": "Junior Developer",
+        "company": "E-Catálogos",
+        "date": "May 2024 - October 2024",
+        "city": "Jandira, SP",
+        "description": "Development of custom applications such as ERP, CRM, e-commerce for wholesale, retail and B2B. Integration and business rules support.<br/> <b>Technologies:</b> React, TypeScript, Styled-components, Node.js, Express, PrismaORM, MySQL."
+      },
+      {
+        "title": "Technology Instructor",
+        "company": "Micro Ka Informática",
+        "date": "February 2024 - May 2024",
+        "city": "Barueri, SP",
+        "description": "Responsible for teaching technology, logic, programming, artificial intelligence, machine learning, and deep learning concepts to students in public schools (5th to 9th grade).<br/> <b>Technologies:</b> Python, Scratch, Automation, and Virtual Reality."
+      },
+      {
+        "title": "Technical Support Analyst",
+        "company": "Hosanna Tech",
+        "date": "June 2024 - February 2024",
+        "city": "Barueri, SP",
+        "description": "Responsible for incident resolution and customer service, training and customization of platform functionality, installation and maintenance activities on corporate websites.<br/> <b>Technologies:</b> HTML, CSS, PHP, Twig, MySQL Workbench."
+      }
+    ]
+  }
+  

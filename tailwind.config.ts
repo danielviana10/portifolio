@@ -10,9 +10,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'navbar-bg': 'var(--greyCostum)',
+        'navbarBg': 'var(--greyCustom)',
         'greenCustom': 'var(--greenCustom)',
-        'greyCostum': 'var(--background)',
+        'greyCustom': 'var(--background)',
         'iconCustom': 'var(--blackCustmo2)',
       },
     },
