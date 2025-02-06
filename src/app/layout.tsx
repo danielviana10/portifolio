@@ -1,5 +1,5 @@
 "use client";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { useEffect, useState } from "react";
 import "./globals.css";
 import { I18nProvider } from "@/components/I18nProvider";
@@ -40,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Navbar />
           <LanguageSwitcher />
           {children}
+          <SpeedInsights />
           <ScrollToTopButton />
         </I18nProvider>
       </body>
