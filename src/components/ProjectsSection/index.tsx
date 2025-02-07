@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = () => {
       <div className="max-w-6xl mx-auto relative">
         <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-        <div className="flex items-center justify-center space-x-4 mt-28 md:pt-[10rem] lg:pt-[3rem]">
+        <div className="flex items-center justify-center space-x-4 mt-28 lg:mt-14 md:pt-[10rem] lg:pt-[3rem]">
           <button
             onClick={goToPrevious}
             disabled={currentIndex === 0}
