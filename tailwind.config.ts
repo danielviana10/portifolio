@@ -13,7 +13,7 @@ export default {
         'navbarBg': 'var(--greyCustom)',
         'greenCustom': 'var(--greenCustom)',
         'greyCustom': 'var(--background)',
-        'iconCustom': 'var(--blackCustmo2)',
+        'iconCustom': 'var(--blackCustom2)',
       },
     },
   },
