@@ -63,7 +63,7 @@ const SkillsSection: React.FC = () => {
 
         {skills.map((line, lineIndex) => (
           <div
-            className="carousel overflow-hidden top-20 md:top-[14rem] lg:top-20"
+            className="carousel overflow-hidden top-20 md:top-[14rem] lg:top-14"
             key={lineIndex}
             onMouseEnter={() => handleMouseEnter(lineIndex)}
             onMouseLeave={() => handleMouseLeave(lineIndex)}
