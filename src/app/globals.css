@@ -34,30 +34,7 @@ html, body {
   flex-direction: column;
 }
 
-// Estilização da barra de rolagem
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--greenCustom);
-  border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #1a7f3a;
-}
-
-* {
-  scrollbar-color: var(--greenCustom) transparent;
-  scrollbar-width: thin;
-}
-
-// Estilização adicional do carrossel das habilidades
+/* Estilização do carrossel da SkillsSection */
 .carousel {
   margin: 0;
   padding: 0;
@@ -154,13 +131,36 @@ html, body {
 .contact-card::after {
   content: "";
   position: absolute;
-  width: calc(100% + 8px); /* Aumenta a área para garantir a visibilidade */
+  width: calc(100% + 8px); 
   height: calc(100% + 8px);
   border-radius: 50%;
   border: 4px solid transparent;
-  z-index: 0; /* Certifica-se de que fica visível */
+  z-index: 0; 
 }
 
 .contact-card:hover::after {
   animation: circle-border 1s linear forwards;
+}
+
+// Estilização da barra de rolagem
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--greenCustom);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a7f3a;
+}
+
+* {
+  scrollbar-color: var(--greenCustom) transparent;
+  scrollbar-width: thin;
 }
