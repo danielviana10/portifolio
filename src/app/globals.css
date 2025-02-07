@@ -69,7 +69,7 @@ html, body {
   object-fit: contain;
 }
 
-.group {
+.carousel .group {
   display: flex;
   gap: 40px;
   will-change: transform;

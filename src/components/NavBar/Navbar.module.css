@@ -1,8 +1,0 @@
-.hoverEffect {
-    transition: color 0.3s ease, border-bottom 0.2s ease;
-  }
-  
-  .hoverEffect:hover {
-    color: var(--greenCustom);
-    border-bottom: 1px solid var(--greenCustom);
-  }
