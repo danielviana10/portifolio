@@ -22,8 +22,8 @@ const ContactsSection: React.FC = () => {
     {
       name: "email",
       icon: "/icons/mail.svg",
-      info: "danielviana43@gmail.com",
-      link: "mailto:danielviana43@gmail.com",
+      info: "danielvianna43",
+      link: "mailto:danielvianna43@gmail.com",
     },
     {
       name: "linkedin",
@@ -78,29 +78,21 @@ const ContactsSection: React.FC = () => {
       <div className="flex justify-center gap-12 flex-wrap mt-36 flex-col md:flex-row lg:flex-row">
         {contacts.map((contact, index) => (
           <motion.a
-            key={index}
-            href={contact.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-center flex flex-col items-center mb-8 sm:mb-12 lg:mb-0"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-          >
-            <div
-              className="w-16 h-16 bg-iconCustom flex items-center justify-center rounded-full shadow-md relative
-                    hover:before:absolute hover:before:inset-[-2px] hover:before:rounded-full hover:before:animate-circle-border"
-            >
-              <Image
-                src={contact.icon}
-                alt={t(contact.name)}
-                width={40}
-                height={40}
-              />
-            </div>
-            <p className="text-lg font-semibold text-white mt-2">{t(contact.name)}</p>
-            <p className="text-sm font-semibold text-greenCustom">{contact.info}</p>
-          </motion.a>
+  key={index}
+  href={contact.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-center flex flex-col items-center mb-8 sm:mb-12 lg:mb-0"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
+  transition={{ duration: 0.5, delay: index * 0.2 }}
+>
+  <div className="w-16 h-16 bg-iconCustom flex items-center justify-center rounded-full shadow-md relative contact-card">
+    <Image src={contact.icon} alt={t(contact.name)} width={40} height={40} />
+  </div>
+  <p className="text-lg font-semibold text-white mt-2">{t(contact.name)}</p>
+  <p className="text-sm font-semibold text-greenCustom">{contact.info}</p>
+</motion.a>
         ))}
       </div>
 
