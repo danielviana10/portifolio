@@ -67,14 +67,14 @@ const ExperiencesSection: React.FC = () => {
           className="flex flex-col sm:flex-row justify-between text-white space-y-4 sm:space-y-0"
         >
           <div className="w-full sm:w-1/2">
-            <h3 className="text-xl sm:text-2xl font-semibold text-white">{exp.title}</h3>
-            <h4 className="text-xl sm:text-2xl font-semibold text-greenCustom mb-2">{exp.company}</h4>
-            <p className="text-md sm:text-lg font-semibold text-[#979797]">
+            <h3 className="text-xl sm:text-2xl lg:text-xl font-semibold text-white">{exp.title}</h3>
+            <h4 className="text-xl sm:text-2xl lg:text-xl font-semibold text-greenCustom mb-2">{exp.company}</h4>
+            <p className="text-md sm:text-lg lg:text-lg font-semibold text-[#979797]">
               {exp.date} / {exp.city}
             </p>
           </div>
           <div className="w-full sm:w-1/2 sm:pl-6">
-            <p className="text-md sm:text-lg" dangerouslySetInnerHTML={{ __html: exp.description }}></p>
+            <p className="text-md sm:text-lg lg:text-[1.01rem]" dangerouslySetInnerHTML={{ __html: exp.description }}></p>
           </div>
         </motion.div>
       ))}

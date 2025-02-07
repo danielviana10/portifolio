@@ -71,11 +71,11 @@ const ContactsSection: React.FC = () => {
     >
       <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-      <h3 className="text-center text-2xl font-semibold mt-14 md:text-3xl lg:text-3xl">
+      <h3 className="text-center text-2xl font-semibold mt-10 md:mt-14 lg:mt-14 md:text-3xl lg:text-3xl">
         {t("cta")}
       </h3>
 
-      <div className="flex justify-center gap-12 flex-wrap mt-36 flex-col md:flex-row lg:flex-row">
+      <div className="flex justify-center gap-12 flex-wrap mt-20 md:mt-36 lg:mt-36 flex-grow md:flex-row lg:flex-row">
         {contacts.map((contact, index) => (
           <motion.a
   key={index}

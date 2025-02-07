@@ -31,7 +31,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
     >
       <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
-      <div className="flex flex-col md:flex-col items-center justify-between sm:mt-8 space-y-8 md:mt-12 md:space-y-0 lg:mt-8 lg:flex-row">
+      <div className="flex flex-col md:flex-col items-center justify-between mt-8 sm:mt-8 space-y-8 md:mt-0 md:space-y-0 lg:mt-8 lg:flex-row">
         <div ref={divRef as React.RefObject<HTMLDivElement>} className="w-60 md:w-1/2 lg:w-1/2 relative">
           <Image
             className="absolute top-0 left-0"
@@ -55,7 +55,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
           ))}
         </div>
 
-        <div className="w-full md:w-[36rem] md:pt-7 lg:w-1/2 font-semibold text-[1rem] relative">
+        <div className="w-full md:w-[36rem] pt-7 md:pt-7 lg:pt-0 lg:w-1/2 font-semibold text-[1rem] relative">
           <p>
             {t("description1")} <GreenText>{t("create")}</GreenText> {t("description1b")}{" "}
             <GreenText>{t("experience")}</GreenText> {t("description1c")}{" "}
