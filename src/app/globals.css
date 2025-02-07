@@ -34,6 +34,7 @@ html, body {
   flex-direction: column;
 }
 
+/* Estilização do carrossel da SkillsSection */
 .carousel {
   margin: 0;
   padding: 0;
@@ -116,4 +117,27 @@ html, body {
   inset: -2px;
   z-index: -1;
   animation: circle-border 1s linear forwards;
+}
+
+// Estilização da barra de rolagem
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--greenCustom);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1a7f3a;
+}
+
+* {
+  scrollbar-color: var(--greenCustom) transparent;
+  scrollbar-width: thin;
 }
