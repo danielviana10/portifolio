@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import SvgRenderer from "./SvgRenderer";
-import ClickableText from "./ClickableText";
+import GreenText from "./GreenText";
 import SectionTitle from "../SectionTitle";
 
 interface AboutContentProps {
@@ -57,31 +57,31 @@ const AboutContent: React.FC<AboutContentProps> = ({
 
         <div className="w-full md:w-[36rem] md:pt-7 lg:w-1/2 font-semibold text-[1rem] relative">
           <p>
-            {t("description1")} <ClickableText>{t("create")}</ClickableText> {t("description1b")}{" "}
-            <ClickableText>{t("experience")}</ClickableText> {t("description1c")}{" "}
-            <ClickableText>{t("innovation")}</ClickableText> {t("description1d")}{" "}
-            <ClickableText>{t("connecting")}</ClickableText> {t("description1e")}{" "}
-            <ClickableText>{t("solutions")}</ClickableText> {t("description1f")}{" "}
-            <ClickableText>{t("performance")}</ClickableText>.
+            {t("description1")} <GreenText>{t("create")}</GreenText> {t("description1b")}{" "}
+            <GreenText>{t("experience")}</GreenText> {t("description1c")}{" "}
+            <GreenText>{t("innovation")}</GreenText> {t("description1d")}{" "}
+            <GreenText>{t("connecting")}</GreenText> {t("description1e")}{" "}
+            <GreenText>{t("solutions")}</GreenText> {t("description1f")}{" "}
+            <GreenText>{t("performance")}</GreenText>.
           </p>
           <br />
           <p>
-            {t("description2a")} <ClickableText>{t("systemsDevelopment")}</ClickableText> {t("description2b")}{" "}
-            <ClickableText>{t("computerScience")}</ClickableText> {t("description2c")}{" "}
-            <ClickableText>{t("fullStack")}</ClickableText> {t("description2d")}{" "}
-            <ClickableText>{t("develop")}</ClickableText> {t("description2e")}{" "}
-            <ClickableText>{t("wellStructured")}</ClickableText>.
+            {t("description2a")} <GreenText>{t("systemsDevelopment")}</GreenText> {t("description2b")}{" "}
+            <GreenText>{t("computerScience")}</GreenText> {t("description2c")}{" "}
+            <GreenText>{t("fullStack")}</GreenText> {t("description2d")}{" "}
+            <GreenText>{t("develop")}</GreenText> {t("description2e")}{" "}
+            <GreenText>{t("wellStructured")}</GreenText>.
           </p>
           <br />
           <p>
-            {t("description3a")} <ClickableText>{t("accessible")}</ClickableText> {t("description3b")}{" "}
-            <ClickableText>{t("practicalSolutions")}</ClickableText>.
+            {t("description3a")} <GreenText>{t("accessible")}</GreenText> {t("description3b")}{" "}
+            <GreenText>{t("practicalSolutions")}</GreenText>.
           </p>
           <br />
           <p>
-            {t("description4a")} <ClickableText>{t("family")}</ClickableText> {t("description4b")}{" "}
-            <ClickableText>{t("read")}</ClickableText> {t("description4c")}{" "}
-            <ClickableText onClick={handleClick}>{t("playLoL")}</ClickableText>.
+            {t("description4a")} <GreenText>{t("family")}</GreenText> {t("description4b")}{" "}
+            <GreenText>{t("read")}</GreenText> {t("description4c")}{" "}
+            <GreenText onClick={handleClick} isClickable>{t("playLoL")}</GreenText>.
           </p>
           <Image
             className="absolute right-5 bottom-0"
