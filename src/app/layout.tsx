@@ -47,8 +47,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Daniel Viana | Desenvolvedor Full Stack" />
             <meta property="og:description" content="Confira meu portfólio e projetos como desenvolvedor Full Stack!" />
-            <meta property="og:image" content="https://danielviana-portfolio.vercel.app/preview.png" />
-            <meta property="og:url" content="https://danielviana-portfolio.vercel.app/" />
+            <meta property="og:image" content="https://danielviana.vercel.app/preview.png" />
+            <meta property="og:url" content="https://danielviana.vercel.app/" />
             <title>Daniel Viana | Desenvolvedor Full Stack</title>
 
             {/* Meta tags adicionais */}
