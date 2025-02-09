@@ -12,7 +12,7 @@ interface ButtonProps {
   rel?: string;
 }
 
-export const Button = ({
+const Button = ({
   children,
   href,
   onClick,
@@ -31,7 +31,6 @@ export const Button = ({
         aria-label={ariaLabel}
         target={target}
         rel={rel}
-        download
       >
         {children}
       </Link>
@@ -39,12 +38,10 @@ export const Button = ({
   }
 
   return (
-    <button
-      className={buttonClasses}
-      onClick={onClick}
-      aria-label={ariaLabel}
-    >
+    <button className={buttonClasses} onClick={onClick} aria-label={ariaLabel}>
       {children}
     </button>
   );
 };
+
+export default Button;
