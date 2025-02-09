@@ -1,3 +1,4 @@
+"use client";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { useEffect, useState } from "react";
 import "./globals.css";
@@ -8,31 +9,7 @@ import i18n from "../../i18n";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import Head from "next/head";
-
-export const metadata = {
-  title: "Daniel Viana | Desenvolvedor Full Stack",
-  description: "Confira meu portfólio e projetos como desenvolvedor Full Stack!",
-  openGraph: {
-    type: "website",
-    url: "https://danielviana.vercel.app/",
-    title: "Daniel Viana | Desenvolvedor Full Stack",
-    description: "Confira meu portfólio e projetos como desenvolvedor Full Stack!",
-    images: [
-      {
-        url: "https://danielviana.vercel.app/preview.png",
-        width: 1200,
-        height: 630,
-        alt: "Preview do portfólio de Daniel Viana",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Daniel Viana | Desenvolvedor Full Stack",
-    description: "Confira meu portfólio e projetos como desenvolvedor Full Stack!",
-    images: ["https://danielviana.vercel.app/preview.png"],
-  },
-};
+import { metadata } from "./metadata";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [isReady, setIsReady] = useState(false);
