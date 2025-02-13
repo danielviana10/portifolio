@@ -12,16 +12,28 @@
       url: "https://fabiomorozini.com.br/",
     },
     {
-      title: "Burguer Kenzie",
+      title: "Burguer Typescript",
       svg: "/projects/project2.svg",
       tecnologies: ["html", "css", "react", "figma"],
-      url: "https://react-entrega-template-hamburgueria-da-kenzie-danielviana10.vercel.app/",
+      url: "https://burguer-typescript.vercel.app/",
+    },
+    {
+      title: "Nu Kenzie",
+      svg: "/projects/nukenzie.png",
+      tecnologies: ["html", "css", "react", "figma"],
+      url: "https://nukenzie-seven-rosy.vercel.app/",
     },
     {
       title: "Git Search",
       svg: "/projects/project3.svg",
       tecnologies: ["html", "css", "javascript", "figma"],
       url: "https://kenzie-academy-brasil-developers.github.io/gitSearchBase-danielviana10/",
+    },
+    {
+      title: "Kenzie Hub",
+      svg: "/projects/project7.svg",
+      tecnologies: ["html", "css", "react", "figma"],
+      url: "https://kenzie-hub.vercel.app/",
     },
     {
       title: "PetInfo",
