@@ -21,7 +21,7 @@
       title: "Ecatalogos",
       svg: "/projects/ecatalogos.png",
       tecnologies: ["html", "css", "react", "figma"],
-      url: "https://github.com/danielviana10/ecatalogos",
+      url: "https://github.com/danielviana10/ecatalogo",
     },
     {
       title: "Nu Kenzie",
