@@ -18,6 +18,12 @@
       url: "https://burguer-typescript.vercel.app/",
     },
     {
+      title: "Ecatalogos",
+      svg: "/projects/ecatalogos.png",
+      tecnologies: ["html", "css", "react", "figma"],
+      url: "https://github.com/danielviana10/ecatalogos",
+    },
+    {
       title: "Nu Kenzie",
       svg: "/projects/nukenzie.png",
       tecnologies: ["html", "css", "react", "figma"],
@@ -31,7 +37,7 @@
     },
     {
       title: "Kenzie Hub",
-      svg: "/projects/project7.svg",
+      svg: "/projects/kenziehub.png",
       tecnologies: ["html", "css", "react", "figma"],
       url: "https://kenzie-hub.vercel.app/",
     },
