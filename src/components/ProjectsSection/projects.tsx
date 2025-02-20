@@ -18,6 +18,12 @@
       url: "https://burguer-typescript.vercel.app/",
     },
     {
+      title: "Tech Ecom",
+      svg: "/projects/tech-ecom.png",
+      tecnologies: ["html", "css", "angular", "figma"],
+      url: "https://tech-ecom.vercel.app/",
+    },
+    {
       title: "Ecatalogos",
       svg: "/projects/ecatalogos.png",
       tecnologies: ["html", "css", "react", "figma"],
