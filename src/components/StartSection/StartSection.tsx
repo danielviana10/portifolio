@@ -22,7 +22,7 @@ const StartSection: React.FC = () => {
           <AnimatedTitle name="Daniel" title={t("title")} />
 
           <Button
-            href="/daniel-viana-curriculo.pdf"
+            href="/daniel-viana.pdf"
             ariaLabel={t("downloadCV")}
             target="_blank"
             rel="noopener noreferrer"

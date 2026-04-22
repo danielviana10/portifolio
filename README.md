@@ -1,8 +1,10 @@
 Portifólio profissional.
 
-Tecnologias utilizadas: Next.JS, TypeScript, TailWind, Figma e Adobe Photoshop.
+Tecnologias utilizadas: Next.JS, TypeScript, TailWind, i18next, Framer motion, Figma e Adobe Photoshop.
 
 O intuito desse projeto, além de demonstrar meu conhecimento em front-end com Next.JS, é compartilhar informações profissionais e pessoais sobre mim, apontando experiências, habilidades, hobbies e opiniões.
+
+Aplicação Vercel: https://danielviana.vercel.app/
 
 Figma do Projeto: https://www.figma.com/design/rnyCGhNxCTUnZ2Sh0qwYND/porti?node-id=58-4&t=xvS2wdqfji8d8hEt-1
 
