@@ -1,5 +1,3 @@
-import { ClientSideLayout } from "@/components/ClientSideLayout";
-import Head from "next/head";
 import './globals.css'
 
 export const metadata = {
@@ -31,7 +29,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt">
       <body suppressHydrationWarning>
-        <Head>
           {/* favicon */}
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -49,8 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <meta name="twitter:title" content={metadata.title} />
           <meta name="twitter:description" content={metadata.description} />
           <meta name="twitter:image" content={metadata.openGraph.images[0].url} />
-        </Head>
-        <ClientSideLayout>{children}</ClientSideLayout>
+        {children}
       </body>
     </html>
   );

@@ -1,8 +1,9 @@
-import nextI18NextConfig from "./next-i18next.config";
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig = {
-  reactStrictMode: true,
-  i18n: nextI18NextConfig.i18n,
+  reactStrictMode: true
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

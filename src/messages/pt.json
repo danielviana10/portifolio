@@ -1,0 +1,101 @@
+{
+    "aboutSection": {
+        "title": "Sobre Mim",
+        "description1": "Desenvolvedor Full Stack, apaixonado por",
+        "create": "criar",
+        "description1b": "interfaces intuitivas e designs que tornam a",
+        "experience": "experiência",
+        "description1c": "do usuário mais simples e eficiente. Meu foco está na",
+        "innovation": "inovação",
+        "description1d": "e escalabilidade,",
+        "connecting": "conectando",
+        "description1e": "um back-end sólido a um front-end fluido para",
+        "solutions": " entregar soluções",
+        "description1f": "completas e de alto",
+        "performance": " desempenho",
+        "description2a": "Sou formado em",
+        "systemsDevelopment": "Desenvolvimento de Sistemas",
+        "description2b": "pela UNICV, estou cursando",
+        "computerScience": "Ciência da Computação",
+        "description2c": "na UNIP e concluí o bootcamp",
+        "fullStack": "Full Stack",
+        "description2d": "da Kenzie Academy. Com experiência em desenvolvimento web, mobile, UX/UI design e sistemas integrados,",
+        "develop": "desenvolvo",
+        "description2e": "aplicações robustas, escaláveis e com código limpo e",
+        "wellStructured": "bem estruturado",
+        "description3a": "Acredito que a tecnologia deve ser",
+        "accessible": "acessível",
+        "description3b": "a todos e gosto de transformar conceitos complexos em",
+        "practicalSolutions": "soluções práticas",
+        "description4a": "No meu tempo livre, gosto de estar com minha",
+        "family": "família",
+        "description4b": "e amigos, viajar, patinar,",
+        "read": "ler",
+        "description4c": "um bom livro ou, de vez em quando,",
+        "playLoL": " jogar League of Legends"
+    },
+    "contactsSection": {
+        "title": "Contatos",
+        "cta": "Estou a um clique de distância",
+        "whatsapp": "Telefone",
+        "email": "Gmail",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "message": "?text=Oi,%20Daniel!%20Vi%20seu%20portifólio,%20vamos%20conversar?",
+        "copyrightText": "Todos os direitos reservados."
+    },
+    "experiencesSection": {
+        "title": "Experiências",
+        "experiences": [
+            {
+                "title": "Desenvolvedor Full Stack",
+                "company": "Freelancer",
+                "date": "Atualmente",
+                "city": "Barueri, SP",
+                "description": "Desenvolvimento de aplicações web/mobile personalizadas, manutenção de sites e design, portfólio empresarial, gestão de agendamentos, automatização de tarefas e testes.<br/> <b>Tecnologias:</b> React, TypeScript, Tailwind, Nest.js, TypeORM, Python, Testify."
+            },
+            {
+                "title": "Desenvolvedor Júnior",
+                "company": "E-Catálogos",
+                "date": "Maio 2024 - Outubro 2024",
+                "city": "Jandira, SP",
+                "description": "Desenvolvimento de aplicações personalizadas como: ERP, CRM, E-commerce de atacado, varejo e B2B. Assistência de integração e regra de negócio.<br/> <b>Tecnologias:</b> React, TypeScript, Styled-components, Node.js, Express, PrismaORM, MySQL."
+            },
+            {
+                "title": "Instrutor de Tecnologia",
+                "company": "Micro Ka Informática",
+                "date": "Fevereiro 2024 - Maio 2024",
+                "city": "Barueri, SP",
+                "description": "Responsável por aplicar aulas na rede pública para crianças e adolescentes do 5° ao 9° ano do ensino fundamental sobre tecnologia, lógica, programação, inteligência artificial, conceito de machine learning e deep learning.<br/> <b>Tecnologias:</b> Python, Scratch, Automação e Realidade Virtual."
+            },
+            {
+                "title": "Analista Suporte Técnico",
+                "company": "Hosanna Tech",
+                "date": "Junho 2024 - Fevereiro 2024",
+                "city": "Barueri, SP",
+                "description": "Responsável por resolução de incidentes e atendimento ao cliente, treinamento e alinhamentos quanto às funcionalidades da plataforma, atividades de instalação e manutenção em websites empresariais.<br/> <b>Tecnologias:</b> HTML, CSS, PHP, Twig, MySQL Workbench."
+            }
+        ]
+    },
+    "navbar": {
+        "home": "início",
+        "about": "sobre",
+        "skills": "habilidades",
+        "experiences": "experiências",
+        "projects": "projetos",
+        "contacts": "contatos"
+    },
+    "projectsSection": {
+        "title": "Projetos"
+    },
+    "skillsSection": {
+        "title": "Habilidades"
+    },
+    "startSection": {
+        "greeting": "Olá, eu sou o",
+        "title": "Desenvolvedor Full Stack",
+        "downloadCV": "Baixar Currículo",
+        "cvButton": "Currículo",
+        "imageAlt": "Imagem do Daniel"
+    }
+}

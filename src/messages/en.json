@@ -1,0 +1,102 @@
+{
+    "aboutSection": {
+        "title": "About Me",
+        "description1": "Full Stack Developer, passionate about",
+        "create": "creating",
+        "description1b": "intuitive interfaces and designs that make the",
+        "experience": "user experience",
+        "description1c": "simpler and more efficient. My focus is on",
+        "innovation": "innovation",
+        "description1d": "and scalability,",
+        "connecting": "connecting",
+        "description1e": "a solid back-end to a fluid front-end ",
+        "solutions": "to deliver ",
+        "description1f": "complete ",
+        "performance": "high-performance solutions",
+        "description2a": "I have a degree in",
+        "systemsDevelopment": "Systems Development",
+        "description2b": "from UNICV, I'm studying",
+        "computerScience": "Computer Science",
+        "description2c": "at UNIP and have completed the",
+        "fullStack": "Full Stack",
+        "description2d": "Bootcamp at Kenzie Academy. With experience in web and mobile development, UX/UI design, and integrated systems,",
+        "develop": "I develop",
+        "description2e": "robust, scalable applications with clean and",
+        "wellStructured": "well-structured code",
+        "description3a": "I believe that technology should be",
+        "accessible": "accessible",
+        "description3b": "to everyone, and I enjoy translating complex concepts into",
+        "practicalSolutions": "practical solutions",
+        "description4a": "In my spare time, I enjoy spending time with my",
+        "family": "family",
+        "description4b": "and friends, traveling, skating,",
+        "read": "reading",
+        "description4c": "a good book or, from time to time, ",
+        "playLoL": "playing League of Legends"
+    },
+    "contactsSection": {
+        "title": "Contacts",
+        "cta": "I'm just a click away",
+        "whatsapp": "Phone",
+        "email": "Gmail",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "message": "?text=Hi,%20Daniel!%20I%20saw%20your%20portfolio,%20let's%20chat?",
+        "copyrightText": "All rights reserved."
+    },
+    "experiencesSection": {
+        "title": "EXPERIENCES",
+        "subtitle": "Experiences",
+        "experiences": [
+            {
+                "title": "Full Stack Developer",
+                "company": "Freelancer",
+                "date": "Currently",
+                "city": "Barueri, SP",
+                "description": "Custom web/mobile application development, website maintenance and design, business portfolio, schedule management, task automation and testing.<br/> <b>Technologies:</b> React, TypeScript, Tailwind, Nest.js, TypeORM, Python, Testify."
+            },
+            {
+                "title": "Junior Developer",
+                "company": "E-Catálogos",
+                "date": "May 2024 - October 2024",
+                "city": "Jandira, SP",
+                "description": "Development of custom applications such as ERP, CRM, e-commerce for wholesale, retail and B2B. Integration and business rules support.<br/> <b>Technologies:</b> React, TypeScript, Styled-components, Node.js, Express, PrismaORM, MySQL."
+            },
+            {
+                "title": "Technology Instructor",
+                "company": "Micro Ka Informática",
+                "date": "February 2024 - May 2024",
+                "city": "Barueri, SP",
+                "description": "Responsible for teaching technology, logic, programming, artificial intelligence, machine learning, and deep learning concepts to students in public schools (5th to 9th grade).<br/> <b>Technologies:</b> Python, Scratch, Automation, and Virtual Reality."
+            },
+            {
+                "title": "Technical Support Analyst",
+                "company": "Hosanna Tech",
+                "date": "June 2024 - February 2024",
+                "city": "Barueri, SP",
+                "description": "Responsible for incident resolution and customer service, training and customization of platform functionality, installation and maintenance activities on corporate websites.<br/> <b>Technologies:</b> HTML, CSS, PHP, Twig, MySQL Workbench."
+            }
+        ]
+    },
+    "navbar": {
+        "home": "home",
+        "about": "about",
+        "skills": "skills",
+        "experiences": "experiences",
+        "projects": "projects",
+        "contacts": "contacts"
+    },
+    "projectsSection": {
+        "title": "Projects"
+    },
+    "skillsSection": {
+        "title": "Skills"
+    },
+    "startSection": {
+        "greeting": "Hi, I am",
+        "title": "Full Stack Developer",
+        "downloadCV": "Download Resume",
+        "cvButton": "Resume",
+        "imageAlt": "Image of Daniel"
+    }
+}

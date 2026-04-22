@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import SectionTitle from "../SectionTitle";
 import ExperienceItem from "./ExperienceItem";
 
@@ -14,7 +14,7 @@ interface Experience {
 }
 
 const ExperiencesSection: React.FC = () => {
-  const { t } = useTranslation("experiencesSection");
+  const t = useTranslations("experiencesSection");
   const [hasAnimated, setHasAnimated] = useState(false);
   const experiencesRef = useRef<HTMLElement | null>(null);
 
@@ -38,7 +38,7 @@ const ExperiencesSection: React.FC = () => {
     return () => observer.unobserve(experiencesSection);
   }, [hasAnimated]);
 
-  const experiences: Experience[] = t("experiences", { returnObjects: true }) as Experience[];
+  const experiences: Experience[] = t.raw("experiences") as Experience[];
 
   return (
     <motion.section
@@ -56,7 +56,7 @@ const ExperiencesSection: React.FC = () => {
         <SectionTitle title={t("title").toUpperCase()} subtitle={t("title")} />
 
         <div className="space-y-10 sm:space-y-4 md:space-y-4 lg:space-y-4">
-          {experiences.map((exp, index) => (
+          {Array.isArray(experiences) && experiences.map((exp, index) => (
             <ExperienceItem
               key={index}
               experience={exp}

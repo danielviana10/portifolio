@@ -1,14 +1,19 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Navbar = () => {
-  const { t } = useTranslation("navbar");
+  const t = useTranslations("navbar");
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const currentLocale = pathname.split("/")[1];
 
   useEffect(() => {
     const sections = ["home", "about", "skills", "experiences", "projects", "contacts"];
@@ -48,7 +53,7 @@ export const Navbar = () => {
     <nav className="fixed top-[-1px] left-0 w-full p-4 text-white bg-navbarBg flex justify-between items-center px-[2rem] md:px-[4rem] shadow-md z-50">
       <button
         className="text-[25px] font-semibold bg-transparent border-none cursor-pointer"
-        onClick={() => window.location.href = '/'}
+        onClick={() => router.push(`/${currentLocale}`)}
       >
         Daniel<span className="text-greenCustom">.</span> Viana
       </button>

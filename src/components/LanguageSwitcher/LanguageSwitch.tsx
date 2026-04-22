@@ -1,15 +1,19 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "next-i18next";
+
+import { useState, useRef, useEffect } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Globe } from "lucide-react";
 
 const LanguageSwitcher = () => {
-  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const currentLocale = pathname.split("/")[1]; // pega "pt" ou "en"
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -19,19 +23,20 @@ const LanguageSwitcher = () => {
     };
 
     document.addEventListener("mousedown", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
+    const newPath = `/${lng}${pathname.substring(3)}`;
+    router.push(newPath);
     setIsOpen(false);
   };
 
   return (
-    <div ref={containerRef} className="fixed top-20 right-6 sm:right-6 md:right-14 lg:right-16 bg-navbarBg p-2 rounded-full shadow-lg z-40">
+    <div
+      ref={containerRef}
+      className="fixed top-20 right-6 sm:right-6 md:right-14 lg:right-16 bg-navbarBg p-2 rounded-full shadow-lg z-40"
+    >
       <AnimatePresence mode="wait">
         {isOpen ? (
           <motion.div
@@ -45,15 +50,20 @@ const LanguageSwitcher = () => {
             <button
               onClick={() => changeLanguage("pt")}
               className={`p-2 rounded-full transition ${
-                i18n.language === "pt" ? "bg-greenCustom" : "bg-gray-700 hover:bg-gray-600"
+                currentLocale === "pt"
+                  ? "bg-greenCustom"
+                  : "bg-gray-700 hover:bg-gray-600"
               }`}
             >
               <Image src="/icons/brasil.svg" alt="Português" width={24} height={24} />
             </button>
+
             <button
               onClick={() => changeLanguage("en")}
               className={`p-2 rounded-full transition ${
-                i18n.language === "en" ? "bg-greenCustom" : "bg-gray-700 hover:bg-gray-600"
+                currentLocale === "en"
+                  ? "bg-greenCustom"
+                  : "bg-gray-700 hover:bg-gray-600"
               }`}
             >
               <Image src="/icons/usa.svg" alt="English" width={24} height={24} />
