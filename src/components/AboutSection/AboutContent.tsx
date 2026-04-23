@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import SvgRenderer from "./SvgRenderer";
 import GreenText from "./GreenText";
 import SectionTitle from "../SectionTitle";
@@ -20,7 +20,7 @@ const AboutContent: React.FC<AboutContentProps> = ({
   handleClick,
   isVisible,
 }) => {
-  const { t } = useTranslation("aboutSection");
+  const t  = useTranslations("aboutSection");
 
   return (
     <motion.div

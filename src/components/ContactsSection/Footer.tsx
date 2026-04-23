@@ -1,8 +1,8 @@
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation("contactsSection");
+  const t = useTranslations("contactsSection");
 
   return (
     <footer className="w-full text-center bg-blackCustom py-4 mt-auto">

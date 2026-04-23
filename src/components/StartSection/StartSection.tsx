@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { FaDownload } from "react-icons/fa";
 import AnimatedTitle from "./AnimatedTitle";
@@ -7,7 +7,7 @@ import HoverImage from "./HoverImage";
 import { Button } from "../Button";
 
 const StartSection: React.FC = () => {
-  const { t } = useTranslation("startSection");
+  const t = useTranslations("startSection");
 
   return (
     <motion.section

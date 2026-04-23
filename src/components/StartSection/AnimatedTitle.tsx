@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 
 interface AnimatedTitleProps {
   name: string;
@@ -7,7 +7,7 @@ interface AnimatedTitleProps {
 }
 
 const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ name, title }) => {
-  const { t } = useTranslation("startSection");
+  const t  = useTranslations("startSection");
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -22,7 +22,7 @@ const AnimatedTitle: React.FC<AnimatedTitleProps> = ({ name, title }) => {
         {name}
       </span>{" "} 
       :] <br />
-      {title}
+        {title}
     </h2>
   );
 };

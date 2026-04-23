@@ -49,15 +49,22 @@
         "experiences": [
             {
                 "title": "Desenvolvedor Full Stack",
-                "company": "Freelancer",
-                "date": "Atualmente",
+                "company": "Amar Assist",
+                "date": "Março 2025 - Abril 2026",
+                "city": "São Paulo, SP",
+                "description": "Atuação no desenvolvimento de aplicações full stack, contribuindo no front-end com Vue.js e no back-end com PHP e Laravel. Integração de APIs REST e gerenciamento de bancos de dados MySQL. Também responsável pela correção de bugs, suporte técnico e evolução contínua dos sistemas.<br/><b>Tecnologias:</b> Vue.js, PHP, Laravel, MySQL, APIs REST."
+            },
+            {
+                "title": "Instrutor de Programação",
+                "company": "KODLAND",
+                "date": "Janeiro 2025 - Junho 2025",
                 "city": "Barueri, SP",
-                "description": "Desenvolvimento de aplicações web/mobile personalizadas, manutenção de sites e design, portfólio empresarial, gestão de agendamentos, automatização de tarefas e testes.<br/> <b>Tecnologias:</b> React, TypeScript, Tailwind, Nest.js, TypeORM, Python, Testify."
+                "description": "Responsável por ministrar aulas de programação para crianças e adolescentes, utilizando metodologias ativas e gamificação para tornar o aprendizado mais envolvente e eficaz.<br/> <b>Tecnologias:</b> Python, Scratch, Roblox Studio e Novas Tecnologias."
             },
             {
                 "title": "Desenvolvedor Júnior",
                 "company": "E-Catálogos",
-                "date": "Maio 2024 - Outubro 2024",
+                "date": "Maio 2024 - Dezembro 2024",
                 "city": "Jandira, SP",
                 "description": "Desenvolvimento de aplicações personalizadas como: ERP, CRM, E-commerce de atacado, varejo e B2B. Assistência de integração e regra de negócio.<br/> <b>Tecnologias:</b> React, TypeScript, Styled-components, Node.js, Express, PrismaORM, MySQL."
             },

@@ -50,31 +50,38 @@
         "experiences": [
             {
                 "title": "Full Stack Developer",
-                "company": "Freelancer",
-                "date": "Currently",
+                "company": "Amar Assist",
+                "date": "March 2025 - April 2026",
+                "city": "São Paulo, SP",
+                "description": "Worked on full stack application development, contributing to the front-end with Vue.js and the back-end with PHP and Laravel. Integrated REST APIs and managed MySQL databases. Also responsible for bug fixing, technical support, and continuous system improvements.<br/><b>Technologies:</b> Vue.js, PHP, Laravel, MySQL, REST APIs."
+            },
+            {
+                "title": "Programming Instructor",
+                "company": "KODLAND",
+                "date": "January 2025 - June 2025",
                 "city": "Barueri, SP",
-                "description": "Custom web/mobile application development, website maintenance and design, business portfolio, schedule management, task automation and testing.<br/> <b>Technologies:</b> React, TypeScript, Tailwind, Nest.js, TypeORM, Python, Testify."
+                "description": "Taught programming to children and teenagers using active learning methodologies and gamification to make lessons more engaging and effective.<br/><b>Technologies:</b> Python, Scratch, Roblox Studio."
             },
             {
                 "title": "Junior Developer",
                 "company": "E-Catálogos",
-                "date": "May 2024 - October 2024",
+                "date": "May 2024 - December 2024",
                 "city": "Jandira, SP",
-                "description": "Development of custom applications such as ERP, CRM, e-commerce for wholesale, retail and B2B. Integration and business rules support.<br/> <b>Technologies:</b> React, TypeScript, Styled-components, Node.js, Express, PrismaORM, MySQL."
+                "description": "Developed custom applications such as ERP, CRM, and e-commerce platforms for wholesale, retail, and B2B. Assisted with system integrations and business rules.<br/><b>Technologies:</b> React, TypeScript, Styled-components, Node.js, Express, Prisma ORM, MySQL."
             },
             {
                 "title": "Technology Instructor",
                 "company": "Micro Ka Informática",
                 "date": "February 2024 - May 2024",
                 "city": "Barueri, SP",
-                "description": "Responsible for teaching technology, logic, programming, artificial intelligence, machine learning, and deep learning concepts to students in public schools (5th to 9th grade).<br/> <b>Technologies:</b> Python, Scratch, Automation, and Virtual Reality."
+                "description": "Taught technology, programming, logic, and basic concepts of artificial intelligence, machine learning, and deep learning to public school students (5th to 9th grade).<br/><b>Technologies:</b> Python, Scratch, Automation, Virtual Reality."
             },
             {
                 "title": "Technical Support Analyst",
                 "company": "Hosanna Tech",
                 "date": "June 2024 - February 2024",
                 "city": "Barueri, SP",
-                "description": "Responsible for incident resolution and customer service, training and customization of platform functionality, installation and maintenance activities on corporate websites.<br/> <b>Technologies:</b> HTML, CSS, PHP, Twig, MySQL Workbench."
+                "description": "Handled incident resolution and customer support, provided training, and assisted with platform customization, installation, and maintenance of corporate websites.<br/><b>Technologies:</b> HTML, CSS, PHP, Twig, MySQL Workbench."
             }
         ]
     },

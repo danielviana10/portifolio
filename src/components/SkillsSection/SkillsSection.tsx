@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import SectionTitle from '../SectionTitle';
 import skills from "./skills";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import SkillCarousel from './SkillCarousel';
 
 const SkillsSection: React.FC = () => {
-  const { t } = useTranslation("skillsSection");
+  const t = useTranslations("skillsSection");
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState<boolean[]>(skills.map(() => false));
   const skillsRef = useRef<HTMLElement | null>(null);

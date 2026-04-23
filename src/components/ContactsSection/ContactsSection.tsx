@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import SectionTitle from "../SectionTitle";
 import ContactList from "./ContactList";
 import Footer from "./Footer";
 
 const ContactsSection: React.FC = () => {
-  const { t } = useTranslation("contactsSection");
+  const t = useTranslations("contactsSection");
   const [isVisible, setIsVisible] = useState(false);
   const contactsRef = useRef<HTMLElement | null>(null);
 

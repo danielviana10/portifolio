@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../SectionTitle";
 import projects from "./projects";
-import { useTranslation } from "next-i18next";
+import { useTranslations } from "next-intl";
 import NavigationButton from "./NavigationButton";
 import ProjectCard from "./ProjectCard";
 
@@ -11,7 +11,7 @@ const ProjectsSection: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
-  const { t } = useTranslation("projectsSection");
+  const t = useTranslations("projectsSection");
   const totalSlides = projects.length;
 
   const goToPrevious = () => setCurrentIndex((prev) => Math.max(prev - 1, 0));
